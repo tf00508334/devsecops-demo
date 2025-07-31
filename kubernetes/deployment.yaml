@@ -42,11 +42,11 @@ spec:
           periodSeconds: 5
         volumeMounts:
         - name: cyberark-sdk
-          mountPath: /opt/CARKaim/sdk
+          mountPath: /app/CARKaim
       volumes:
       - name: cyberark-sdk
         hostPath:
-          path: /home
+          path: /opt/CARKaim
           type: Directory
       imagePullSecrets:
       - name: github-container-registry
