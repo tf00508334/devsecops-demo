@@ -43,6 +43,7 @@ spec:
         volumeMounts:
         - name: cyberark-sdk
           mountPath: /app/CARKaim
+        command: ["/bin/sh", "-c", "chmod -R 777 /app/CARKaim"]
       volumes:
       - name: cyberark-sdk
         hostPath:
