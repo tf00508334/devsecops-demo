@@ -17,7 +17,7 @@ spec:
       initContainers:
       - name: set-carkaim-permissions
         image: busybox
-        command: ["sh", "-c", "chmod 777 /app/CARKaim"]
+        command: ["sh", "-c", "chmod 777 /opt/CARKaim"]
         volumeMounts:
         - name: cyberark-sdk
           mountPath: /app/CARKaim
@@ -49,7 +49,7 @@ spec:
           periodSeconds: 5
         volumeMounts:
         - name: cyberark-sdk
-          mountPath: /app/CARKaim
+          mountPath: /opt/CARKaim
       volumes:
       - name: cyberark-sdk
         hostPath:
