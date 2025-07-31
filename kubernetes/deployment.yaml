@@ -14,6 +14,13 @@ spec:
       labels:
         app: tic-tac-toe
     spec:
+      initContainers:
+      - name: set-carkaim-permissions
+        image: busybox
+        command: ["sh", "-c", "chmod 777 /app/CARKaim"]
+        volumeMounts:
+        - name: cyberark-sdk
+          mountPath: /app/CARKaim
       containers:
       - name: tic-tac-toe
         image: ghcr.io/tf00508334/devsecops-demo:sha-f963ae2bf3cc118c27269ba282f267f7ba430917
@@ -43,7 +50,6 @@ spec:
         volumeMounts:
         - name: cyberark-sdk
           mountPath: /app/CARKaim
-        command: ["/bin/sh", "-c", "chmod -R 777 /app/CARKaim"]
       volumes:
       - name: cyberark-sdk
         hostPath:
