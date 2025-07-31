@@ -20,7 +20,7 @@ spec:
         command: ["sh", "-c", "chmod 777 /opt/CARKaim"]
         volumeMounts:
         - name: cyberark-sdk
-          mountPath: /app/CARKaim
+          mountPath: /opt/CARKaim
       containers:
       - name: tic-tac-toe
         image: ghcr.io/tf00508334/devsecops-demo:sha-55a63b2ced2deb99585180875d9ba37e7f4d591b
