@@ -53,6 +53,6 @@ spec:
       volumes:
       - name: cyberark-sdk
         hostPath:
-          path: /opt/CARKaim
+          path: /host_mnt/opt/CARKaim
       imagePullSecrets:
       - name: github-container-registry
