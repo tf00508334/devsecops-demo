@@ -45,8 +45,7 @@ spec:
           mountPath: /home/michaeluser
       volumes:
       - name: cyberark-sdk
-        hostPath:
-          path: /home_mnt/home/michaeluser
-          type: Directory
+        persistentVolumeClaim:
+          claimName: cyberark-sdk-pvc
       imagePullSecrets:
       - name: github-container-registry
