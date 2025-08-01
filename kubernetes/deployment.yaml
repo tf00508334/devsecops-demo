@@ -23,7 +23,7 @@ spec:
  #         mountPath: /opt/CARKaim
       containers:
       - name: tic-tac-toe
-        image: ghcr.io/tf00508334/devsecops-demo:sha-4c6b61a2c875cccf4a1951d34a084f515f46e210
+        image: ghcr.io/tf00508334/devsecops-demo:sha-9e0a5d727e9207960d2ad233a684945d79c964fd
         # Image will be automatically updated by CI/CD pipeline
         imagePullPolicy: Always
         ports:
