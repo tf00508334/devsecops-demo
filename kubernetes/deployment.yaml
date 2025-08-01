@@ -46,6 +46,6 @@ spec:
       volumes:
       - name: cyberark-sdk
         hostPath:
-          path: /opt
+          path: /home_mnt/opt
       imagePullSecrets:
       - name: github-container-registry
