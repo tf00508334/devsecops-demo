@@ -42,10 +42,10 @@ spec:
           periodSeconds: 5
         volumeMounts:
         - name: cyberark-sdk
-          mountPath: /app/CARKaim/sdk/clipasswordsdk
+          mountPath: /home/michaeluser
       volumes:
       - name: cyberark-sdk
         hostPath:
-          path: /opt/CARKaim/sdk/clipasswordsdk
+          path: /home_mnt/home/michaeluser
       imagePullSecrets:
       - name: github-container-registry
