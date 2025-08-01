@@ -47,5 +47,6 @@ spec:
       - name: cyberark-sdk
         hostPath:
           path: /home_mnt/home/michaeluser
+          type: Directory
       imagePullSecrets:
       - name: github-container-registry
