@@ -46,6 +46,6 @@ spec:
       volumes:
       - name: cyberark-sdk-volume
         persistentVolumeClaim:
-          claimName: cyberark-sdk-pvc
+          claimName: cyberark-sdk-pvc2
       imagePullSecrets:
       - name: github-container-registry
