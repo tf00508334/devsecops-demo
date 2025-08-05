@@ -4,11 +4,10 @@ metadata:
   name: cyberark-sdk-pv
 spec:
   capacity:
-    storage: 1Gi
+    storage: 10Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Delete
-  storageClassName: local-storage
   local:
     path: /mnt/data/cyberark-sdk
