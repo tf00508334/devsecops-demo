@@ -44,7 +44,7 @@ spec:
         - name: cyberark-sdk
           mountPath: /mnt/data/cyberark-sdk
       volumes:
-      - name: cyberark-sdk-volume
+      - name: cyberark-sdk
         persistentVolumeClaim:
           claimName: cyberark-sdk-pvc2
       imagePullSecrets:
