@@ -42,7 +42,7 @@ spec:
           periodSeconds: 5
         volumeMounts:
         - name: cyberark-sdk
-          mountPath: /home/michaeluser
+          mountPath: /app/CARKaim
       volumes:
       - name: cyberark-sdk
         persistentVolumeClaim:
