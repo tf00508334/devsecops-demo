@@ -42,9 +42,9 @@ spec:
           periodSeconds: 5
         volumeMounts:
         - name: cyberark-sdk
-          mountPath: /app/CARKaim
+          mountPath: /mnt/data/cyberark-sdk
       volumes:
-      - name: cyberark-sdk
+      - name: cyberark-sdk-volume
         persistentVolumeClaim:
           claimName: cyberark-sdk-pvc
       imagePullSecrets:
