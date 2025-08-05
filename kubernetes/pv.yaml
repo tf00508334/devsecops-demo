@@ -11,3 +11,11 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   local:
     path: /mnt/data/cyberark-sdk
+  nodeaffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - devsecops-demo-cluster-control-plane
