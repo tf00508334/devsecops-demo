@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: cyberark-sdk-pvc
 spec:
-  storageClassName: manual
+  storageClassName: standard
   allowVolumeExpansion: true
   volumeMode: Filesystem
   accessModes:
