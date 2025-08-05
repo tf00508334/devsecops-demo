@@ -4,7 +4,7 @@ metadata:
   name: cyberark-sdk-pv
 spec:
   capacity:
-    storage: 1Gi
+    storage: 10Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
