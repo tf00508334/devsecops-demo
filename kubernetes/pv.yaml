@@ -12,7 +12,7 @@ spec:
   storageClassName: local-storage
   local:
     path: /mnt/data/cyberark-sdk
-  nodeaffinity:
+  nodeAffinity:
     required:
       nodeSelectorTerms:
         - matchExpressions:
